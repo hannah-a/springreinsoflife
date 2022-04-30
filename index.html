@@ -20,8 +20,7 @@
             src="/images/logo/logo.png"
             srcset="/images/logo/logo.png 300w,
               /images/logo/logo_2x.png 600w,
-              /images/logo/logo_3x.png 900w
-            "
+              /images/logo/logo_3x.png 900w"
             alt="Two horses facing each other in a green heart"
           />
         </figure>
@@ -34,29 +33,29 @@
                 </div>
             <ul class="nav__ul flexed">
               <li class="nav__ulLi">
-                <a href="#" class="nav__ulAnchor">About</a>
+                <a href="/about.html" class="nav__ulAnchor">About</a>
               </li>
               <li class="nav__ulLi">
-                <a href="#" class="nav__ulAnchor">Programs</a>
+                <a href="/programs.html" class="nav__ulAnchor">Programs</a>
                 <ul class="nav__programUl">
                   <li class="nav__programLi">
-                    <a href="#" class="nav__programUlAnchor">Military</a>
+                    <a href="/programs.html" class="nav__programUlAnchor">Military</a>
                   </li>
                   <li class="nav__programLi">
-                    <a href="#" class="nav__programUlAnchor"
+                    <a href="/programs.html" class="nav__programUlAnchor"
                       >Children's<br />Bereavement</a
                     >
                   </li>
                   <li class="nav__programLi">
-                    <a href="#" class="nav__programUlAnchor">At Risk Youth</a>
+                    <a href="/programs.html" class="nav__programUlAnchor">At Risk Youth</a>
                   </li>
                 </ul>
               </li>
               <li class="nav__ulLi">
-                <a href="#" class="nav__ulAnchor">Volunteer</a>
+                <a href="/volunteer.html" class="nav__ulAnchor">Volunteer</a>
               </li>
               <li class="nav__ulLi">
-                <a href="#" class="nav__ulAnchor">Contact</a>
+                <a href="/contact.html" class="nav__ulAnchor">Contact</a>
               </li>
             </ul>
           </nav>
@@ -72,6 +71,55 @@
         </button>
       </header>
     </div>
+    <main class="main homeMain">
+        <section class="main__heroSection maxWidth">
+            <figure class="main__heroFigure">
+                <picture class="main__galleryPicture">
+                    <source media="(max-width: 560px)" srcset="/images/home/slider/coverguywithhorse_square.jpg">
+                    <source media="(min-width: 561px)" srcset="/images/home/slider/coverguywithhorse_2-3.jpg">
+                    <img src="/images/home/slider/coverguywithhorse_2-3.jpg" alt="Man pet horse in field">
+                </picture>
+            </figure>        
+        </section>
+        <div class="whiteWrapper">
+        <section class="main__programs maxWidth">
+            <div class="main__whiteOvalDiv"></div>
+            <div class="main__supportButton">
+                <button class="header__supportButton">
+                    Support
+                    <figure class="header__supportButtonFigure">
+                      <img
+                        class="header__supportButtonImg"
+                        src="/images/logo/horseshoe.svg"
+                      />
+                    </figure>
+                </button>
+            </div>
+            <div class="main__programsBoxes flexed">
+                <figure class="main__programFigure">
+                    <img class="main__programImg" src="/images/programs/ealmilitary_1000x750.jpg" alt="Military veterans in uniform pet horse">
+                    <figcaption class="main__programFigCaption"><button class="main__programsButton">Military<br>Programs</button></figcaption>
+                </figure> 
+                <figure class="main__programFigure">
+                    <img class="main__programImg" src="/images/programs/teenagerunning.jpg" alt="Teenage girl runs with horse on lead.">
+                    <figcaption class="main__programFigCaption"><button class="main__programsButton">Children's<br> Bereavement<br> Programs</button></figcaption>
+                </figure> 
+                <figure class="main__programFigure">
+                    <img class="main__programImg" src="/images/programs/kidwithball__1000x750.jpg" alt="Boy approaches horse with hand outstretched">
+                    <figcaption class="main__programFigCaption"><button class="main__programsButton">At Risk<br> Youth<br>Programs</button></figcaption>
+                </figure> 
+            </div>
+            <div class="main__founderInfo flexed">
+                <figure class="main__founderFigure">
+                    <img class="main__founderImg" src="/images/home/staff/christiana__home.jpg" alt="Picture of middle-aged womman with dark brown curly hair">
+                </figure>
+                <p>"As an EAGALA Model non-profit, we incorporate the use of horses for therapeutic intervention towards promoting emotional growth and healing.<br>Our team includes a licensed Mental Health Professional and a certified Equine Specialist. Not forgetting our Horses which are selected for their capacity to work with individuals who are troubled or suffering." <br>  - Christianna Capra, CEO 
+                <a href="/about.html" class="main__founderIcon"><i class="fa-brands fa-facebook-f footer__socialIcon"></i></a>
+                </p>
+            </div>
+        </section>
+        </div>
+    </main>
     <div class="whiteWrapper">
       <footer class="footer maxWidth">
         <div class="footer__socialDiv flexed">
@@ -108,7 +156,12 @@
             />
           </figure>
         </div>
+        <div class="footer__copyright">
+            <p class="footer__hannah">&copy;2022 by Hannah Armstrong for Educational Purpose</p>
+            <p class="footer__srol">All content belongs to Spring Reins of Life at https://springreinsoflife.org</p>
+        </div>
       </footer>
     </div>
+    <script src="/script.js"></script>
   </body>
 </html>
