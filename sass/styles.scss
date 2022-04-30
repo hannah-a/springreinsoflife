@@ -2,9 +2,11 @@
 // Abstracts
 @import "abstracts/utilities";
 @import "abstracts/variables";
+
 //Base
 @import "base/normalize";
 @import "base/typography";
+@import "base/colors";
 
 //Components
 @import "components/buttons";

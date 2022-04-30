@@ -1,3 +1,23 @@
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.maxWidth {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.flexed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.whiteWrapper {
+  background-color: white;
+}
+
 /* 
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -98,5 +118,9 @@ hr {
 
 input, select {
   vertical-align: middle;
+}
+
+.body {
+  background-color: #D8F2F2;
 }
 /*# sourceMappingURL=styles.css.map */
