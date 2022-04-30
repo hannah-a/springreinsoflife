@@ -11,3 +11,30 @@
 .whiteWrapper {
     background-color: white;
 }
+
+//Columns
+
+@for $i from 0 through 12 {
+    $w: ($i / 12) * 100%;
+    .small-#{$i} {
+      flex-basis: $w;
+    }
+}
+
+@media only screen and (min-width: 35rem) {
+    @for $i from 0 through 12 {
+        $w: ($i / 12) * 100%;
+        .medium-#{$i} {
+            flex-basis: $w;
+        }
+    }
+}
+
+@media only screen and (min-width: 64rem) {
+    @for $i from 0 through 12 {
+        $w: ($i / 12) * 100%;
+        .large-#{$i} {
+            flex-basis: $w;
+        }
+    }
+}
