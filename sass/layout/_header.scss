@@ -1,0 +1,83 @@
+.header {
+    padding: 1rem;
+}
+
+.header__figure {
+    width: 100px;
+    height: auto;
+}
+.header__figureImg {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <header class="header maxWidth homeheader flexed">
+//         <figure class="header__figure">
+//           <img
+//             src="/images/logo/logo.png"
+//             srcset="/images/logo/logo.png 300w,
+//               /images/logo/logo_2x.png 600w,
+//               /images/logo/logo_3x.png 900w"
+//             alt="Two horses facing each other in a green heart"
+//           />
+//         </figure>
+//         <div class="header__logoNav">
+//           <h1 class="header__logo">Spring Reins of Life</h1>
+//           <nav class="nav">
+//                <div class="nav__buttons">
+//                     <div class="nav__buttonHamburger">&#9776;</div>
+//                     <div class="nav__buttonX">X</div>
+//                 </div>
+//             <ul class="nav__ul flexed">
+//               <li class="nav__ulLi">
+//                 <a href="/about.html" class="nav__ulAnchor">About</a>
+//               </li>
+//               <li class="nav__ulLi">
+//                 <a href="/programs.html" class="nav__ulAnchor">Programs</a>
+//                 <ul class="nav__programUl">
+//                   <li class="nav__programLi">
+//                     <a href="/programs.html" class="nav__programUlAnchor">Military</a>
+//                   </li>
+//                   <li class="nav__programLi">
+//                     <a href="/programs.html" class="nav__programUlAnchor"
+//                       >Children's<br />Bereavement</a
+//                     >
+//                   </li>
+//                   <li class="nav__programLi">
+//                     <a href="/programs.html" class="nav__programUlAnchor">At Risk<br> Youth</a>
+//                   </li>
+//                 </ul>
+//               </li>
+//               <li class="nav__ulLi">
+//                 <a href="/volunteer.html" class="nav__ulAnchor">Volunteer</a>
+//               </li>
+//               <li class="nav__ulLi">
+//                 <a href="/contact.html" class="nav__ulAnchor">Contact</a>
+//               </li>
+//             </ul>
+//           </nav>
+//         </div>
+//         <button class="header__supportButton">
+//           Support
+//           <figure class="header__supportButtonFigure">
+//             <img
+//               class="header__supportButtonImg"
+//               src="/images/logo/horseshoe.svg"
+//             />
+//           </figure>
+//         </button>
+//       </header>
