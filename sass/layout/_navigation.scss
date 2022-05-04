@@ -1,3 +1,6 @@
+//Main ul getting hid, as but is displayed with ul--open, while exit--closed
+//is taken off the exit button so it shows, and the hamburger button is hidden
+
 
 
 .nav__ul {
@@ -6,26 +9,36 @@
 .nav__ul.ul--open {
     display: block;
 }
+
+//exit button is displayed when ul--open is on the element, which means its showing
 .nav__ul.ul--open.nav__buttonX {
     display: block;
 }
+//rule for the pre-click closure
 .nav__buttonX.exit--closed {
     display: none;
 }
+
+//after click
 .hamburger--closed {
     display: none;
 }
-.programs--open {
-    display: block;
-}
+//rule for it to show reseting the default when exit--closed is off
 .nav__buttonX {
     display: block;
 }
 
+//Parent box for programs list overlay
 .nav__ulProgramsLi {
     position: relative;
 }
+//Programs ul initially set to none and position absolute to the relative parent
 .nav__programUl {
     display: none;
     position: absolute;
+}
+
+//Programs ul displays with hover 
+.programs--open {
+    display: block;
 }

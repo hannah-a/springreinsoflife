@@ -343,10 +343,6 @@ input, select {
   display: none;
 }
 
-.programs--open {
-  display: block;
-}
-
 .nav__buttonX {
   display: block;
 }
@@ -358,5 +354,9 @@ input, select {
 .nav__programUl {
   display: none;
   position: absolute;
+}
+
+.programs--open {
+  display: block;
 }
 /*# sourceMappingURL=styles.css.map */
