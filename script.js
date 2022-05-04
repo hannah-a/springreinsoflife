@@ -1,14 +1,14 @@
-//References to main navigation
+//References to Main Nav
 const ul = document.querySelector('.nav__ul')
 const hamburgerButton = document.querySelector('.nav__buttonHamburger')
 const exitButton = document.querySelector('.nav__buttonX')
 
-//References to sub navigation
+//References to Sub Nav
 const ulPrograms = document.querySelector('.nav__programUl')
 const programsButton = document.querySelector('.nav__ulProgramsLi') //only for the buttons
 
 
-//Main nav expanding
+//Main Nav
 hamburgerButton.addEventListener('click', () => {
     hamburgerButton.classList.toggle('hamburger--closed')
     ul.classList.toggle('ul--open')
@@ -20,7 +20,7 @@ exitButton.addEventListener('click', () => {
     exitButton.classList.toggle('exit--closed')
 })
 
-//Sub nav expanding
+//Sub Nav
 
 programsButton.addEventListener('mouseover', () => {
     ulPrograms.classList.add('programs--open')
