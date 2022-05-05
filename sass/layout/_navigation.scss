@@ -7,14 +7,15 @@
     display: none;
     position: absolute;
     right: 0;
-    bottom: -120%;
+    bottom: -225%;
 
-    padding: .5rem;
+    padding: 1rem;
 
     text-align: right;
 
     background-color: white;
 }
+
 .nav__ul.ul--open {
     display: block;
 }
@@ -45,10 +46,13 @@
 .nav__programUl {
     display: none;
     position: absolute;
-    left: -160%;
+    left: -150%;
+    top: -10%;
 
-    padding:.5rem;
+    padding: .5rem;
     background-color: white;
+
+    font-size: .8rem;
 }
 
 //Programs ul displays with hover 
@@ -64,8 +68,24 @@
     font-size: 2rem;
 }
 
+.nav__ulAnchor {
+    text-decoration: none;
+}
+.nav__programUlAnchor {
+    text-decoration: none;
+}
+.nav__ulLi {
+    padding: .5rem 0;
+}
+.nav__programLi {
+    padding: .2rem 0;
+}
 @media only screen and (min-width: 35rem) {
    
+
+
+
+
 }
 
 @media only screen and (min-width: 64rem) {

@@ -387,8 +387,8 @@ input, select {
   display: none;
   position: absolute;
   right: 0;
-  bottom: -120%;
-  padding: .5rem;
+  bottom: -225%;
+  padding: 1rem;
   text-align: right;
   background-color: white;
 }
@@ -420,9 +420,11 @@ input, select {
 .nav__programUl {
   display: none;
   position: absolute;
-  left: -160%;
+  left: -150%;
+  top: -10%;
   padding: .5rem;
   background-color: white;
+  font-size: .8rem;
 }
 
 .programs--open {
@@ -434,5 +436,21 @@ input, select {
   right: 0;
   bottom: -.5rem;
   font-size: 2rem;
+}
+
+.nav__ulAnchor {
+  text-decoration: none;
+}
+
+.nav__programUlAnchor {
+  text-decoration: none;
+}
+
+.nav__ulLi {
+  padding: .5rem 0;
+}
+
+.nav__programLi {
+  padding: .2rem 0;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -20,6 +20,8 @@ exitButton.addEventListener('click', () => {
     exitButton.classList.toggle('exit--closed')
 })
 
+
+
 //Sub Nav
 
 programsButton.addEventListener('mouseover', () => {
@@ -28,3 +30,5 @@ programsButton.addEventListener('mouseover', () => {
 programsButton.addEventListener('mouseout', () => {
     ulPrograms.classList.remove('programs--open')
 })
+
+
