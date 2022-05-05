@@ -48,7 +48,7 @@
     left: -150%;
     top: -10%;
 
-    padding: .5rem;
+    padding: .9rem;
     background-color: white;
 
     font-size: .8rem;
@@ -78,7 +78,9 @@
 .nav__ulAnchor:hover {
     color: $darkGreen;
 }
-
+.nav__programUlAnchor:hover {
+    color: $darkGreen;
+}
 
 .nav__ulLi {
     padding: .5rem 0;
@@ -124,11 +126,13 @@
     padding-top: .65rem;
     padding-right: .7rem;
 }
-
+// .nav__ulProgramsLi {
+//     margin-bottom: 1rem;
+// }
 .nav__programUl {
     left: -1rem;
-    top: 2rem;
-
+    top: 1rem;
+    margin-top: 1rem;
     padding: .5rem 1rem 1rem 1rem;
     background-color: white;
 
