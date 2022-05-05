@@ -5,6 +5,15 @@
 
 .nav__ul {
     display: none;
+    position: absolute;
+    right: 0;
+    bottom: -120%;
+
+    padding: .5rem;
+
+    text-align: right;
+
+    background-color: white;
 }
 .nav__ul.ul--open {
     display: block;
@@ -36,9 +45,30 @@
 .nav__programUl {
     display: none;
     position: absolute;
+    left: -160%;
+
+    padding:.5rem;
+    background-color: white;
 }
 
 //Programs ul displays with hover 
 .programs--open {
     display: block;
 }
+
+.nav__buttons {
+    position: absolute;
+    right: 0;
+    bottom: -.5rem;
+
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: 35rem) {
+   
+}
+
+@media only screen and (min-width: 64rem) {
+    
+}
+

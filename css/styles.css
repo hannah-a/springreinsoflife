@@ -326,12 +326,14 @@ input, select {
 }
 
 .header__logo {
+  padding: 1rem;
   font-family: mrs-eaves-roman-small-caps, sans-serif;
-  font-size: 2rem;
+  font-size: clamp(0.8rem, 160%, 200%);
 }
 
-.nav__buttonHamburger {
-  margin: 0 1rem;
+.header__logoNav {
+  position: relative;
+  width: 100%;
 }
 
 .header__supportButton {
@@ -339,17 +341,18 @@ input, select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   bottom: 0;
-  left: 0;
-  padding: .1rem 1rem;
-  margin: .5rem 1rem;
+  left: 20%;
+  padding: .2rem .3rem;
+  margin: 1rem 1rem .5rem .8rem;
   background-color: #1A9B63;
   border-radius: 3rem;
 }
@@ -364,13 +367,13 @@ input, select {
           align-items: center;
   height: 100%;
   font-family: mrs-eaves-roman-all-small-ca, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1rem;
   font-weight: 300;
   color: white;
 }
 
 .header__supportButtonFigure {
-  margin: .5rem;
+  margin: .1rem .5rem 0 .5rem;
   width: 15%;
   height: auto;
 }
@@ -382,6 +385,12 @@ input, select {
 
 .nav__ul {
   display: none;
+  position: absolute;
+  right: 0;
+  bottom: -120%;
+  padding: .5rem;
+  text-align: right;
+  background-color: white;
 }
 
 .nav__ul.ul--open {
@@ -411,9 +420,19 @@ input, select {
 .nav__programUl {
   display: none;
   position: absolute;
+  left: -160%;
+  padding: .5rem;
+  background-color: white;
 }
 
 .programs--open {
   display: block;
+}
+
+.nav__buttons {
+  position: absolute;
+  right: 0;
+  bottom: -.5rem;
+  font-size: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */
