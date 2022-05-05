@@ -420,6 +420,7 @@ input, select {
 .nav__ul {
   display: none;
   position: absolute;
+  z-index: 2;
   right: 0;
   bottom: -11rem;
   padding: 1rem;
@@ -533,12 +534,200 @@ input, select {
     padding-right: .7rem;
   }
   .nav__programUl {
+    z-index: 2;
     left: -1rem;
     top: 1rem;
     margin-top: 1rem;
     padding: .5rem 1rem 1rem 1rem;
     background-color: white;
     font-size: .8rem;
+  }
+}
+
+.main__heroSection {
+  position: relative;
+}
+
+.main__heroWordDiv {
+  position: absolute;
+  top: 8%;
+  left: 11%;
+  margin: 1rem;
+}
+
+.main__heroH2 {
+  font-family: mrs-eaves-roman-all-small-ca, sans-serif;
+  font-weight: 200;
+  font-size: clamp(2rem, 6vw, 3rem);
+  text-shadow: 0px 0px 5px black, 0px 0px 10px black,  0px 0px 40px black, 0px 0px 30px black, 0px 0px 40px black;
+  color: white;
+}
+
+.main__heroSpan {
+  color: black;
+  text-shadow: 0px 0px 5px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 20px white, 0px 0px 20px white, 0px 0px 20px white, 0px 0px 20px white, 0px 0px 20px white, 0px 0px 30px white, 0px 0px 40px white, 0px 0px 60px white, 0px 0px 60px white, 0px 0px 80px white, 0px 0px 80px white;
+}
+
+.main__heroFigure {
+  width: 100%;
+  max-width: 1024px;
+  height: auto;
+}
+
+.main__galleryPicture {
+  width: 100%;
+  height: auto;
+}
+
+.main__galleryPictureSrc {
+  width: 100%;
+  height: auto;
+}
+
+.main__heroDescriptionDiv {
+  position: absolute;
+  bottom: 10vw;
+  width: 60vw;
+  margin: 15%;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+}
+
+.main__heroDescriptionP {
+  color: black;
+  line-height: 1.2rem;
+  font-size: 1rem;
+  font-family: mrs-eaves, serif;
+  font-weight: 400;
+}
+
+.main__programs {
+  position: relative;
+}
+
+.main__whiteOvalDiv {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: absolute;
+  z-index: 1;
+  top: -3%;
+  left: -12rem;
+  width: 100%;
+  height: 12%;
+  padding: 2rem 12rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.main__programFigure {
+  width: 100%;
+  height: auto;
+}
+
+.main__programImg {
+  width: 100%;
+  height: auto;
+}
+
+.main__supportButtonDiv {
+  position: absolute;
+  top: -1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 3;
+  width: 100%;
+}
+
+.main__supportButton {
+  z-index: 4;
+  padding: .5rem .8rem;
+  margin: 1rem 1rem .5rem .8rem;
+  background-color: #1A9B63;
+  border-radius: 3rem;
+}
+
+.main__supportButton a {
+  text-decoration: none;
+}
+
+.main__supportButton:hover {
+  background-color: #136f47;
+}
+
+.main__supportButtonContainer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__supportTitle {
+  padding: 0 2.8rem .2rem .5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  font-family: mrs-eaves-roman-all-small-ca, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: white;
+}
+
+.main__supportButtonFigure {
+  position: absolute;
+  right: .2rem;
+  top: -3px;
+  width: 19%;
+  height: auto;
+  margin: .2rem;
+}
+
+.main__supportButtonImg {
+  width: 100%;
+  height: auto;
+}
+
+.main__programsBoxes {
+  position: relative;
+  z-index: 3;
+  padding-top: 5.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 35rem) {
+  .main__heroDescriptionDiv {
+    margin: 12%;
+  }
+  .main__programsBoxes {
+    padding-top: 6.5rem;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  .main__heroDescriptionDiv {
+    width: 18vw;
+    margin: 12%;
+  }
+  .main__heroDescriptionP {
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+  .main__supportButtonDiv {
+    top: -1.5rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

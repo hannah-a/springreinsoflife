@@ -5,6 +5,7 @@
 .nav__ul {
     display: none;
     position: absolute;
+    z-index: 2;
     right: 0;
     bottom: -11rem;
 
@@ -130,10 +131,12 @@
 //     margin-bottom: 1rem;
 // }
 .nav__programUl {
+    z-index: 2;
     left: -1rem;
     top: 1rem;
     margin-top: 1rem;
     padding: .5rem 1rem 1rem 1rem;
+
     background-color: white;
 
     font-size: .8rem;

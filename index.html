@@ -91,33 +91,41 @@
       <section class="main__heroSection maxWidth">
         <figure class="main__heroFigure">
           <picture class="main__galleryPicture">
-            <source
+            <source class="main__galleryPictureSrc"
               media="(max-width: 560px)"
               srcset="/images/home/slider/coverguywithhorse_square.jpg"
             />
-            <source
+            <source class="main__galleryPictureSrc"
               media="(min-width: 561px)"
               srcset="/images/home/slider/coverguywithhorse_2-3.jpg"
             />
-            <img
+            <img class="main__galleryPictureSrc"
               src="/images/home/slider/coverguywithhorse_2-3.jpg"
               alt="Man pet horse in field"
             />
           </picture>
         </figure>
+        <div class="main__heroWordDiv">
+          <h2 class="main__heroH2">Horses, Humans & <span class="main__heroSpan">Healing</span></h2>
+        </div>
+        <div class="main__heroDescriptionDiv"><p class="main__heroDescriptionP">We are dedicated to supporting Veterans, grieving and troubled youth with the healing power of horses.</p></div>
       </section>
-      <div class="whiteWrapper">
+      <div class="whiteWrapper home__wrapperRel">
         <section class="main__programs maxWidth">
           <div class="main__whiteOvalDiv"></div>
-          <div class="main__supportButton">
-            <button class="header__supportButton">
-              Support
-              <figure class="header__supportButtonFigure">
+          <div class="main__supportButtonDiv">
+            <button class="main__supportButton">
+              <a href="https://www.paypal.com/donate?token=j5h7RAVhJANu5BJ2gubhy-2nfRBkO-ji79Ww3x7A4YoqXMAyxcFTzprYhgOQUZmHtDjsaCTBUC9YQRMT" target="_blank">
+              <div class="main__supportButtonContainer">
+              <h2 class="main__supportTitle">Support</h2>
+              <figure class="main__supportButtonFigure">
                 <img
-                  class="header__supportButtonImg"
+                  class="main__supportButtonImg"
                   src="/images/logo/horseshoe.svg"
                 />
               </figure>
+              </div>
+              </a>
             </button>
           </div>
           <div class="main__programsBoxes flexed">
@@ -166,7 +174,7 @@
           </div>
         </section>
       </div>
-      <section class="main__founderInfo flexed">
+      <section class="main__founderInfo maxWidth flexed">
         <figure class="main__founderFigure">
           <img
             class="main__founderImg"
