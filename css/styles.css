@@ -2,6 +2,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
+  border: none;
 }
 
 .grid {
@@ -310,6 +311,7 @@ input, select {
 }
 
 .header {
+  position: relative;
   padding: 1rem;
 }
 
@@ -319,6 +321,61 @@ input, select {
 }
 
 .header__figureImg {
+  width: 100%;
+  height: auto;
+}
+
+.header__logo {
+  font-family: mrs-eaves-roman-small-caps, sans-serif;
+  font-size: 2rem;
+}
+
+.nav__buttonHamburger {
+  margin: 0 1rem;
+}
+
+.header__supportButton {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  left: 0;
+  padding: .1rem 1rem;
+  margin: .5rem 1rem;
+  background-color: #1A9B63;
+  border-radius: 3rem;
+}
+
+.header__supportButton:hover {
+  background-color: #136f47;
+}
+
+.header__supportTitle {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  font-family: mrs-eaves-roman-all-small-ca, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: white;
+}
+
+.header__supportButtonFigure {
+  margin: .5rem;
+  width: 15%;
+  height: auto;
+}
+
+.header__supportButtonImg {
   width: 100%;
   height: auto;
 }
