@@ -1,6 +1,6 @@
 .header {
     position: relative;
-    padding: 1rem;
+    padding: 1.8rem 1rem 1rem 1rem;
 }
 
 .header__figure {
@@ -15,8 +15,15 @@
 
 .header__logo {
     padding: 1rem;
-    font-family: mrs-eaves-roman-small-caps, sans-serif;
-    font-size: clamp(.8rem, 160%, 200%);
+
+    font-family: mrs-eaves-roman-all-small-ca, sans-serif;
+    font-size: clamp(1.5rem, 5vw , 2.5rem);
+    font-weight: 200;
+    letter-spacing: .08rem;
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
 .header__logoNav {
     position: relative;
@@ -25,24 +32,30 @@
 
 .header__supportButton {
     position: absolute;
-    display: flex;
-    justify-content:center;
-    align-content: center;
-    align-items: center;
     bottom: 0;
-    left: 20%;
+    right: 3rem;
 
     padding: .2rem .3rem;
     margin: 1rem 1rem .5rem .8rem;
 
     background-color: $darkGreen;
     border-radius: 3rem;
+    a {
+        text-decoration: none;
+    }
 }
-
+.header__supportButtonContainer {
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+}
 .header__supportButton:hover {
     background-color: darken($darkGreen, 10%);
 }
 .header__supportTitle {
+    padding: 0 1.8rem .2rem .5rem;
     align-items: center;
     height: 100%;
 
@@ -52,16 +65,35 @@
     color: white;
 }
 .header__supportButtonFigure {
-    margin: .1rem .5rem 0 .5rem;
-    width: 15%;
+    position: absolute;
+    right: .2rem;
+    top: -3px;
+    width: 19%;
     height: auto;
+    margin: .2rem;
 }
 .header__supportButtonImg {
     width: 100%;
     height: auto;
 }
 @media only screen and (min-width: 35rem) {
-   
+    .header__logo {
+        padding: 1rem 0 0 1rem;
+        
+    }
+    .header__supportButton {
+        bottom: 10%;
+        right: 0;
+        left: auto;
+    
+        padding: .2rem .3rem;
+        margin: 1rem 1rem .5rem .8rem;
+    
+        background-color: $darkGreen;
+        border-radius: 3rem;
+    }
+
+
 }
 
 @media only screen and (min-width: 64rem) {
@@ -73,62 +105,3 @@
 
 
 
-
-
-
-// <header class="header maxWidth homeheader flexed">
-//         <figure class="header__figure">
-//           <img
-//             src="/images/logo/logo.png"
-//             srcset="/images/logo/logo.png 300w,
-//               /images/logo/logo_2x.png 600w,
-//               /images/logo/logo_3x.png 900w"
-//             alt="Two horses facing each other in a green heart"
-//           />
-//         </figure>
-//         <div class="header__logoNav">
-//           <h1 class="header__logo">Spring Reins of Life</h1>
-//           <nav class="nav">
-//                <div class="nav__buttons">
-//                     <div class="nav__buttonHamburger">&#9776;</div>
-//                     <div class="nav__buttonX">X</div>
-//                 </div>
-//             <ul class="nav__ul flexed">
-//               <li class="nav__ulLi">
-//                 <a href="/about.html" class="nav__ulAnchor">About</a>
-//               </li>
-//               <li class="nav__ulLi">
-//                 <a href="/programs.html" class="nav__ulAnchor">Programs</a>
-//                 <ul class="nav__programUl">
-//                   <li class="nav__programLi">
-//                     <a href="/programs.html" class="nav__programUlAnchor">Military</a>
-//                   </li>
-//                   <li class="nav__programLi">
-//                     <a href="/programs.html" class="nav__programUlAnchor"
-//                       >Children's<br />Bereavement</a
-//                     >
-//                   </li>
-//                   <li class="nav__programLi">
-//                     <a href="/programs.html" class="nav__programUlAnchor">At Risk<br> Youth</a>
-//                   </li>
-//                 </ul>
-//               </li>
-//               <li class="nav__ulLi">
-//                 <a href="/volunteer.html" class="nav__ulAnchor">Volunteer</a>
-//               </li>
-//               <li class="nav__ulLi">
-//                 <a href="/contact.html" class="nav__ulAnchor">Contact</a>
-//               </li>
-//             </ul>
-//           </nav>
-//         </div>
-//         <button class="header__supportButton">
-//           Support
-//           <figure class="header__supportButtonFigure">
-//             <img
-//               class="header__supportButtonImg"
-//               src="/images/logo/horseshoe.svg"
-//             />
-//           </figure>
-//         </button>
-//       </header>

@@ -312,7 +312,7 @@ input, select {
 
 .header {
   position: relative;
-  padding: 1rem;
+  padding: 1.8rem 1rem 1rem 1rem;
 }
 
 .header__figure {
@@ -327,8 +327,15 @@ input, select {
 
 .header__logo {
   padding: 1rem;
-  font-family: mrs-eaves-roman-small-caps, sans-serif;
-  font-size: clamp(0.8rem, 160%, 200%);
+  font-family: mrs-eaves-roman-all-small-ca, sans-serif;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: 200;
+  letter-spacing: .08rem;
+}
+
+.header__logo a {
+  text-decoration: none;
+  color: black;
 }
 
 .header__logoNav {
@@ -338,6 +345,20 @@ input, select {
 
 .header__supportButton {
   position: absolute;
+  bottom: 0;
+  right: 3rem;
+  padding: .2rem .3rem;
+  margin: 1rem 1rem .5rem .8rem;
+  background-color: #1A9B63;
+  border-radius: 3rem;
+}
+
+.header__supportButton a {
+  text-decoration: none;
+}
+
+.header__supportButtonContainer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,12 +370,6 @@ input, select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  bottom: 0;
-  left: 20%;
-  padding: .2rem .3rem;
-  margin: 1rem 1rem .5rem .8rem;
-  background-color: #1A9B63;
-  border-radius: 3rem;
 }
 
 .header__supportButton:hover {
@@ -362,6 +377,7 @@ input, select {
 }
 
 .header__supportTitle {
+  padding: 0 1.8rem .2rem .5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -373,9 +389,12 @@ input, select {
 }
 
 .header__supportButtonFigure {
-  margin: .1rem .5rem 0 .5rem;
-  width: 15%;
+  position: absolute;
+  right: .2rem;
+  top: -3px;
+  width: 19%;
   height: auto;
+  margin: .2rem;
 }
 
 .header__supportButtonImg {
@@ -383,11 +402,26 @@ input, select {
   height: auto;
 }
 
+@media only screen and (min-width: 35rem) {
+  .header__logo {
+    padding: 1rem 0 0 1rem;
+  }
+  .header__supportButton {
+    bottom: 10%;
+    right: 0;
+    left: auto;
+    padding: .2rem .3rem;
+    margin: 1rem 1rem .5rem .8rem;
+    background-color: #1A9B63;
+    border-radius: 3rem;
+  }
+}
+
 .nav__ul {
   display: none;
   position: absolute;
   right: 0;
-  bottom: -225%;
+  bottom: -11rem;
   padding: 1rem;
   text-align: right;
   background-color: white;
@@ -440,17 +474,66 @@ input, select {
 
 .nav__ulAnchor {
   text-decoration: none;
+  color: black;
 }
 
 .nav__programUlAnchor {
   text-decoration: none;
+  color: black;
+}
+
+.nav__ulAnchor:hover {
+  color: #1A9B63;
 }
 
 .nav__ulLi {
   padding: .5rem 0;
 }
 
+.nav__ulLi.active {
+  color: #1A9B63;
+}
+
 .nav__programLi {
   padding: .2rem 0;
+}
+
+.nav__lineImgLi {
+  display: none;
+}
+
+@media only screen and (min-width: 35rem) {
+  .nav__ul, .nav__ul.ul--open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: static;
+    padding: 0 0 0 1rem;
+    text-align: left;
+    background-color: white;
+  }
+  .hamburger--closed, .nav__buttonX, .ul--open, .nav__buttons {
+    display: none;
+  }
+  .nav__buttons {
+    left: 0;
+    bottom: .5rem;
+    font-size: 2rem;
+  }
+  .nav__ulLi {
+    padding: .5rem .7rem 0 0;
+  }
+  .nav__lineImgLi {
+    display: block;
+    padding-top: .65rem;
+    padding-right: .7rem;
+  }
+  .nav__programUl {
+    left: -1rem;
+    top: 2rem;
+    padding: .5rem 1rem 1rem 1rem;
+    background-color: white;
+    font-size: .8rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

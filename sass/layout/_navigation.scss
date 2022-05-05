@@ -2,12 +2,11 @@
 //is taken off the exit button so it shows, and the hamburger button is hidden
 
 
-
 .nav__ul {
     display: none;
     position: absolute;
     right: 0;
-    bottom: -225%;
+    bottom: -11rem;
 
     padding: 1rem;
 
@@ -70,20 +69,71 @@
 
 .nav__ulAnchor {
     text-decoration: none;
+    color: black;
 }
 .nav__programUlAnchor {
     text-decoration: none;
+    color: black;
 }
+.nav__ulAnchor:hover {
+    color: $darkGreen;
+}
+
+
 .nav__ulLi {
     padding: .5rem 0;
 }
+.nav__ulLi.active {
+    color: $darkGreen;
+}
+
 .nav__programLi {
     padding: .2rem 0;
 }
+.nav__lineImgLi {
+    display: none;
+}
 @media only screen and (min-width: 35rem) {
-   
+ 
+//Same styling for closed and open
+.nav__ul, .nav__ul.ul--open {
+    display: flex;
+    position: static;
+
+    padding: 0 0 0 1rem;
+    text-align: left;
+
+    background-color: white;
+}
 
 
+.hamburger--closed, .nav__buttonX, .ul--open, .nav__buttons  {
+    display: none;
+}
+.nav__buttons {
+    left: 0;
+    bottom: .5rem;
+
+    font-size: 2rem;
+}
+.nav__ulLi {
+    padding: .5rem .7rem 0 0 ;
+}
+.nav__lineImgLi {
+    display: block;
+    padding-top: .65rem;
+    padding-right: .7rem;
+}
+
+.nav__programUl {
+    left: -1rem;
+    top: 2rem;
+
+    padding: .5rem 1rem 1rem 1rem;
+    background-color: white;
+
+    font-size: .8rem;
+}
 
 
 }
