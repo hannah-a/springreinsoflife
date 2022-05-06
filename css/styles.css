@@ -345,11 +345,30 @@ input, select {
 .card__sideInfoDiv {
   padding: 0 1rem 1rem 1rem;
   font-size: .8rem;
+  line-height: 1.4rem;
   color: #555555;
 }
 
 .card__bottomInfoDiv {
   padding: 0 1rem 1rem 1rem;
+  line-height: 1.2rem;
+}
+
+@media only screen and (min-width: 35rem) {
+  .cardContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .card__sideInfoDiv {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  .card__bottomInfoDiv {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 .header {

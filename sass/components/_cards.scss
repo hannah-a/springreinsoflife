@@ -45,15 +45,28 @@
     padding: 0 1rem 1rem 1rem;
 
     font-size: .8rem;
+    line-height: 1.4rem;
     color: rgb(85, 85, 85);
 }
 .card__bottomInfoDiv {
     padding: 0 1rem 1rem 1rem;
+
+    line-height: 1.2rem;
 }
 
 @media only screen and (min-width: 35rem) {
-    
-
+    .cardContainer {
+        display: grid;
+        grid-template-columns: auto auto;
+        
+    }
+    .card__sideInfoDiv {
+        padding: 2rem 1rem 1rem 1rem; 
+    }
+    .card__bottomInfoDiv {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
 
 }
 
