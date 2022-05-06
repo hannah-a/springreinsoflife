@@ -108,7 +108,31 @@
       </header>
     </div>
     <main class="main contactMain">
-     
+     <section class="main__formSection maxWidth">
+       <h2 class="main__formTitle main__h2">Contact</h2>
+       <form class="main__form" method="get" action="/thanks.html">
+        <fieldset class="main__fieldset">
+            <label class="main__formLabel">
+                <div class="forms__inputTitle">Name*</div>
+                <input class="forms__input form__name" type="text" name="name" required>
+            </label>
+             <label class="main__formLabel ">
+                <div class="forms__inputTitle">Email*</div>
+                <input class="forms__input form__email" type="email" name="email" required>
+            </label>
+            <label class="main__formLabel">
+                <div class="forms__inputTitle">Phone Number</div>
+                <input class="forms__input form__number" type="tel" name="phone" placeholder="466-385-3345">
+            </label>
+            
+        </fieldset>
+        <textarea class="form__text">
+
+        </textarea> 
+        <input class="form__submitButton" type="submit" value="Send Message">
+    </form>
+       
+     </section>
     </main>
     <div class="whiteWrapper">
       <footer class="footer maxWidth">
