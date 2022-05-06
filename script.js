@@ -27,7 +27,7 @@ exitButton.addEventListener('click', () => {
 programsButton.addEventListener('mouseover', () => {
     ulPrograms.classList.add('programs--open')
 })
-programsButton.addEventListener('mouseout', () => {
+ulPrograms.addEventListener('mouseout', () => {
     ulPrograms.classList.remove('programs--open')
 })
 
