@@ -1,14 +1,63 @@
-// <div class="cardContainer">
-//                 <h3 card="card__title"></h3>
-//                 <figure class="cardFigure">
-//                     <img class="cardImage" src="#" alt="">
-//                 </figure>
-//                 <div class="card__sideInfoDiv">
-//                     <p class="card__sideInfo card__p"></p>
-//                 </div>
-//                 <div class="card__bottomInfoDiv card__p">
-//                     <p class="card__bottomInfo"></p>
-//                 </div>
-//             </div>
 
 //Card Component
+
+// <div class="cardContainer">
+//             <h3 card="card__title"></h3>
+//             <figure class="cardFigure">
+//               <img class="cardImage" src="#" alt="" />
+//             </figure>
+//             <div class="card__sideInfoDiv">
+//               <p class="card__sideInfo card__p"></p>
+//             </div>
+//             <div class="card__bottomInfoDiv card__p">
+//               <p class="card__bottomInfo"></p>
+//             </div>
+//           </div>
+
+.cardContainer {
+    position: relative;
+    box-shadow: inset 2px 2px 5px rgb(225, 225, 225);  
+}
+.card__title {
+    position: absolute;
+    top: -1rem;
+    left: 1rem;
+    width: fit-content;
+    padding: .5rem;
+    
+    font-family: mrs-eaves-roman-all-small-ca, sans-serif;
+    font-weight: 400;
+
+    background-color: white;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 10px;
+}
+.cardFigure {
+    padding: 2rem 1rem 1rem 1rem;
+    width: 100%;
+    height: auto;
+}
+.cardImage {
+    width: 100%;
+    height: auto;
+}
+.card__sideInfoDiv {
+    padding: 0 1rem 1rem 1rem;
+
+    font-size: .8rem;
+    color: rgb(85, 85, 85);
+}
+.card__bottomInfoDiv {
+    padding: 0 1rem 1rem 1rem;
+}
+
+@media only screen and (min-width: 35rem) {
+    
+
+
+}
+
+@media only screen and (min-width: 64rem) {
+    
+}
+

@@ -34,8 +34,8 @@ text-shadow: 0px 0px 5px black, 0px 0px 10px black,  0px 0px 40px black, 0px 0px
 }
 .main__heroDescriptionDiv {
     position: absolute;
-    bottom: 10vw;
-    width: 60vw;
+    bottom: 10.5vw;
+    width: 15rem;
     margin: 15%;
     padding: 1rem;
 
@@ -58,11 +58,11 @@ text-shadow: 0px 0px 5px black, 0px 0px 10px black,  0px 0px 40px black, 0px 0px
     box-sizing: content-box; //This added the padding outside of the box so that the white overflows the maxwidth
     position: absolute;
     z-index: 1;
-    top: -3%;
+    top: -4%;
     left: -12rem;
 
     width: 100%;
-    height: 12%;
+    height: 20%;
     padding: 2rem 12rem;
    
     background-color: white;
@@ -70,18 +70,11 @@ text-shadow: 0px 0px 5px black, 0px 0px 10px black,  0px 0px 40px black, 0px 0px
 }
 
 
-.main__programFigure {
-    width: 100%;
-    height: auto;
-}
-.main__programImg {
-    width: 100%;
-    height: auto;
-}
+
 
 .main__supportButtonDiv {
     position: absolute;
-    top: -1rem;
+    top: -2rem;
     display: flex;
     justify-content: center;
     z-index: 3;
@@ -136,6 +129,122 @@ text-shadow: 0px 0px 5px black, 0px 0px 10px black,  0px 0px 40px black, 0px 0px
 .main__programsBoxes {
     position: relative;
     z-index: 3;
-    padding-top: 5.5rem;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem 0;
+    
+}
+.main__programFigure {
+    width: 100%;
+    height: auto;
+
+    margin: 2rem;
+}
+.main__programImg {
+    width: 100%;
+    height: auto;
+
+    border-radius: 5px;
+}
+.main__programFigCaption {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    a {
+        width: 100%;
+    }
+}
+.main__programsButton {
+    padding: 1rem;
+   
+    width: 100%;
+    height: 6.25rem;
+
+    text-align: center;
+    font-size: 1.2rem;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(104, 104, 104, 0.422);
+}
+.main__programsButton:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 10px rgb(104, 104, 104);
+
+}
+
+
+// Founder Info
+.main__founderInfo {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.main__founderFigure {
+    flex-basis: 80%;
+    margin: 1rem 0;
+}
+.main__founderImg { 
+    width: 100%;
+    height: auto;
+    border: 10px solid white;
+}
+.main__founderDescDiv {
+    background-color: white;
+    height: fit-content;
+    margin-bottom: 1rem;
+}
+.main__founderDescription {
+    padding: 1rem 1rem 0 1rem;
+
+    font-family: mrs-eaves, serif;
+    line-height: 1.2rem;
+    
+    border-radius: 5px;
+}
+.main__founderNameSpan {
+    width: 100%;
+    text-align: right;
+    padding: 0 1rem 1rem 0;
+}
+.main__founderIcon  {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+//Getting Started
+.main__gettingStartedandNews {
+    padding: 1rem;
+}
+.main__gettingStartedTitle {
+    margin: 3rem 0;
+    font-size: 2rem;
+    font-family: mrs-eaves-roman-all-small-ca, sans-serif;
+    font-weight: 400;
+}
+.main__gettingStartedInfo {
+    line-height: 1.5rem;
+    width: 80%;
+}
+.main__gettingStartedInfoSpan {
+    font-family: mrs-eaves, serif;
+    font-size: 1.4rem;
+}
+
+.main__contactIcon {
+    color: black;
+}
+
+//News & Events
+.main__newsandEvents {
+    padding: 1rem;
+}
+.main__newsandEventsTitle {
+    margin: 3rem 0;
+    font-size: 2rem;
+    font-family: mrs-eaves-roman-all-small-ca, sans-serif;
+    font-weight: 400;
 }
