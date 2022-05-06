@@ -1,0 +1,36 @@
+.footer {
+    margin-top: 4rem;
+}
+
+.footer__socialDiv {
+    justify-content: center;
+}
+.footer__socialAnchor {
+    padding: 3rem 1.5rem 1rem 1.5rem;
+    color: black;
+    font-size: 2rem;
+}
+.footer__socialAnchor:hover {
+    color: $darkGreen;
+}
+
+
+.footer__badgePictures {
+    justify-content: center;
+}
+.footer__badgeFigure {
+    width: 8rem;
+    padding: 1rem .5rem;
+    height: auto;
+}
+.footer__badgeImg {
+    width: 100%;
+    height: auto;
+}
+
+.footer__copyright {
+    padding: 1rem 0;
+
+    text-align: center;
+    font-size: .6rem;
+}

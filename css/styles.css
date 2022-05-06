@@ -371,6 +371,49 @@ input, select {
   }
 }
 
+.footer {
+  margin-top: 4rem;
+}
+
+.footer__socialDiv {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__socialAnchor {
+  padding: 3rem 1.5rem 1rem 1.5rem;
+  color: black;
+  font-size: 2rem;
+}
+
+.footer__socialAnchor:hover {
+  color: #1A9B63;
+}
+
+.footer__badgePictures {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__badgeFigure {
+  width: 8rem;
+  padding: 1rem .5rem;
+  height: auto;
+}
+
+.footer__badgeImg {
+  width: 100%;
+  height: auto;
+}
+
+.footer__copyright {
+  padding: 1rem 0;
+  text-align: center;
+  font-size: .6rem;
+}
+
 .header {
   position: relative;
   padding: 1.8rem 1rem 1rem 1rem;
@@ -882,7 +925,7 @@ input, select {
 }
 
 .main__newsandEvents {
-  padding: 1rem;
+  padding: 1rem 1rem 3rem 1rem;
 }
 
 .main__newsandEventsTitle {
