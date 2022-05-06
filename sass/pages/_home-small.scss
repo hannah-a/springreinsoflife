@@ -212,6 +212,9 @@ text-shadow: 0px 0px 5px black, 0px 0px 10px black,  0px 0px 40px black, 0px 0px
     color: black;
     text-decoration: none;
 }
+.main__founderIcon:hover {
+    color: $darkGreen;
+}
 
 
 
@@ -237,7 +240,9 @@ text-shadow: 0px 0px 5px black, 0px 0px 10px black,  0px 0px 40px black, 0px 0px
 .main__contactIcon {
     color: black;
 }
-
+.main__contactIcon:hover {
+    color: green;
+}
 //News & Events
 .main__newsandEvents {
     padding: 1rem 1rem 3rem 1rem;

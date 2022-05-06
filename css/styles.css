@@ -899,6 +899,10 @@ input, select {
   text-decoration: none;
 }
 
+.main__founderIcon:hover {
+  color: #1A9B63;
+}
+
 .main__gettingStartedandNews {
   padding: 1rem;
 }
@@ -922,6 +926,10 @@ input, select {
 
 .main__contactIcon {
   color: black;
+}
+
+.main__contactIcon:hover {
+  color: green;
 }
 
 .main__newsandEvents {
