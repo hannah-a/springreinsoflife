@@ -1,0 +1,49 @@
+
+.heroComponent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; 
+}
+.heroDescription {
+    padding: 1rem 2rem 2rem 1rem;
+    max-width: 500px;
+    height: fit-content;
+    align-self: start;
+
+    line-height: 1.2rem;
+
+    background-color: white;
+}
+.heroTitle {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    font-family: mrs-eaves-roman-all-small-ca, sans-serif;
+    font-weight: 400;
+}
+.heroFigure {
+    align-self: end;
+    margin: 1rem;
+}
+.heroImg {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 35rem) {
+
+    .heroComponent {
+        grid-template-columns: 1fr 1fr; 
+    }
+  
+    .heroFigure {
+        align-self: center;
+        margin: 0 1rem;
+    }
+    .heroImg {
+        width: 100%;
+        height: auto;
+    }
+    
+
+}
+
