@@ -1,4 +1,6 @@
 * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   border: none;
@@ -77,51 +79,39 @@
   .medium-0 {
     flex-basis: 0%;
   }
-
   .medium-1 {
     flex-basis: 8.3333333333%;
   }
-
   .medium-2 {
     flex-basis: 16.6666666667%;
   }
-
   .medium-3 {
     flex-basis: 25%;
   }
-
   .medium-4 {
     flex-basis: 33.3333333333%;
   }
-
   .medium-5 {
     flex-basis: 41.6666666667%;
   }
-
   .medium-6 {
     flex-basis: 50%;
   }
-
   .medium-7 {
     flex-basis: 58.3333333333%;
   }
-
   .medium-8 {
     flex-basis: 66.6666666667%;
   }
-
   .medium-9 {
     flex-basis: 75%;
   }
-
   .medium-10 {
     flex-basis: 83.3333333333%;
   }
-
   .medium-11 {
     flex-basis: 91.6666666667%;
   }
-
   .medium-12 {
     flex-basis: 100%;
   }
@@ -130,51 +120,39 @@
   .large-0 {
     flex-basis: 0%;
   }
-
   .large-1 {
     flex-basis: 8.3333333333%;
   }
-
   .large-2 {
     flex-basis: 16.6666666667%;
   }
-
   .large-3 {
     flex-basis: 25%;
   }
-
   .large-4 {
     flex-basis: 33.3333333333%;
   }
-
   .large-5 {
     flex-basis: 41.6666666667%;
   }
-
   .large-6 {
     flex-basis: 50%;
   }
-
   .large-7 {
     flex-basis: 58.3333333333%;
   }
-
   .large-8 {
     flex-basis: 66.6666666667%;
   }
-
   .large-9 {
     flex-basis: 75%;
   }
-
   .large-10 {
     flex-basis: 83.3333333333%;
   }
-
   .large-11 {
     flex-basis: 91.6666666667%;
   }
-
   .large-12 {
     flex-basis: 100%;
   }
@@ -300,8 +278,6 @@ input, select {
   position: absolute;
   top: -1rem;
   left: 1rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   padding: 0.5rem 1.5rem;
   font-family: mrs-eaves-roman-all-small-ca, sans-serif;
@@ -340,11 +316,9 @@ input, select {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
   .card__sideInfoDiv {
     padding: 2rem 1rem 1rem 1rem;
   }
-
   .card__bottomInfoDiv {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -359,8 +333,6 @@ input, select {
 .heroDescription {
   padding: 1rem 2rem 2rem 1rem;
   max-width: 500px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   align-self: start;
   line-height: 1.8rem;
@@ -388,12 +360,10 @@ input, select {
   .heroComponent {
     grid-template-columns: 1fr 1fr;
   }
-
   .heroFigure {
     align-self: center;
     margin: 0 1rem;
   }
-
   .heroImg {
     width: 100%;
     height: auto;
@@ -523,7 +493,6 @@ input, select {
   .header__logo {
     padding: 1rem 0 0 1rem;
   }
-
   .header__supportButton {
     bottom: 10%;
     right: 0;
@@ -632,27 +601,22 @@ input, select {
     text-align: left;
     background-color: white;
   }
-
   .hamburger--closed, .nav__buttonX, .ul--open, .nav__buttons {
     display: none;
   }
-
   .nav__buttons {
     left: 0;
     bottom: 0.5rem;
     font-size: 2rem;
   }
-
   .nav__ulLi {
     padding: 0.5rem 0.7rem 0 0;
   }
-
   .nav__lineImgLi {
     display: block;
     padding-top: 0.65rem;
     padding-right: 0.7rem;
   }
-
   .nav__programUl {
     z-index: 2;
     left: -1rem;
@@ -717,7 +681,7 @@ input, select {
   color: rgb(0, 0, 0);
   line-height: 1.2rem;
   font-size: 1rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: mrs-eaves, serif;
   font-weight: 400;
 }
 
@@ -859,8 +823,6 @@ input, select {
 
 .main__founderDescDiv {
   background-color: white;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   margin-bottom: 1rem;
 }
@@ -1020,46 +982,37 @@ input, select {
     width: 20rem;
     margin: 12%;
   }
-
   .main__heroDescriptionP {
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
-
   .main__whiteOvalDiv {
     top: -20%;
     left: -12rem;
     width: 100%;
     height: 60%;
   }
-
   .main__supportButtonDiv {
     top: -15%;
   }
-
   .main__programsBoxes {
     padding-top: 3rem;
     margin: 1rem;
   }
-
   .main__programFigure {
     flex-basis: 30%;
   }
-
   .main__programFigure {
     margin: 0;
   }
-
   .main__founderInfo {
     flex-wrap: nowrap;
     justify-content: center;
   }
-
   .main__founderFigure {
     flex-basis: 30%;
     margin: 1rem;
   }
-
   .main__founderDescDiv {
     flex-basis: 60%;
   }
@@ -1069,18 +1022,15 @@ input, select {
     width: 18rem;
     margin: 12%;
   }
-
   .main__whiteOvalDiv {
     top: -30%;
     left: -12rem;
     width: 100%;
     height: 90%;
   }
-
   .main__supportButtonDiv {
     top: -20%;
   }
-
   .main__programFigure {
     margin: 0.5rem;
     flex-basis: 30%;
