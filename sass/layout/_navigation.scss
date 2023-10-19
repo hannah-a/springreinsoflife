@@ -41,7 +41,17 @@
 //Parent box for programs list overlay
 .nav__ulProgramsLi {
     position: relative;
+    display: block;
+    
+    padding: 2rem;
 }
+
+.nav__ulProgramsLi:hover .nav__programUl {
+    display: block;
+}
+
+
+
 //Programs ul initially set to none and position absolute to the relative parent
 .nav__programUl {
     display: none;
@@ -53,6 +63,7 @@
     background-color: white;
 
     font-size: .8rem;
+    z-index: 2;
 }
 
 //Programs ul displays with hover 
@@ -79,7 +90,11 @@
 .nav__ulAnchor:hover {
     color: $darkGreen;
 }
+
+
+
 .nav__programUlAnchor:hover {
+
     color: $darkGreen;
 }
 
@@ -96,6 +111,7 @@
 .nav__lineImgLi {
     display: none;
 }
+
 @media only screen and (min-width: 35rem) {
  
 //Same styling for closed and open
@@ -103,7 +119,7 @@
     display: flex;
     position: static;
 
-    padding: 0 0 0 1rem;
+    padding: 0 0 1rem 1rem;
     text-align: left;
 
     background-color: white;
@@ -130,12 +146,14 @@
 // .nav__ulProgramsLi {
 //     margin-bottom: 1rem;
 // }
+
+
 .nav__programUl {
     z-index: 2;
     left: -1rem;
-    top: 1rem;
+    top: .5rem;
     margin-top: 1rem;
-    padding: .5rem 1rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
 
     background-color: white;
 
@@ -145,7 +163,4 @@
 
 }
 
-@media only screen and (min-width: 64rem) {
-    
-}
 

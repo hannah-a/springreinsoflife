@@ -4,8 +4,8 @@ const hamburgerButton = document.querySelector('.nav__buttonHamburger')
 const exitButton = document.querySelector('.nav__buttonX')
 
 //References to Sub Nav
-const ulPrograms = document.querySelector('.nav__programUl')
-const programsButton = document.querySelector('.nav__ulProgramsLi') //only for the buttons
+// const ulPrograms = document.querySelector('.nav__programUl')
+// const programsButton = document.querySelector('.nav__ulProgramsLi') //only for the buttons
 
 
 //Main Nav
@@ -24,11 +24,11 @@ exitButton.addEventListener('click', () => {
 
 //Sub Nav
 
-programsButton.addEventListener('mouseover', () => {
-    ulPrograms.classList.add('programs--open')
-})
-ulPrograms.addEventListener('mouseout', () => {
-    ulPrograms.classList.remove('programs--open')
-})
+// programsButton.addEventListener('mouseover', () => {
+//     ulPrograms.classList.add('programs--open')
+// })
+// ulPrograms.addEventListener('mouseout', () => {
+//     ulPrograms.classList.remove('programs--open')
+// })
 
 

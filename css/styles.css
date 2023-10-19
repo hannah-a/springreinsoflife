@@ -536,6 +536,12 @@ input, select {
 
 .nav__ulProgramsLi {
   position: relative;
+  display: block;
+  padding: 2rem;
+}
+
+.nav__ulProgramsLi:hover .nav__programUl {
+  display: block;
 }
 
 .nav__programUl {
@@ -546,6 +552,7 @@ input, select {
   padding: 0.9rem;
   background-color: white;
   font-size: 0.8rem;
+  z-index: 2;
 }
 
 .programs--open {
@@ -597,7 +604,7 @@ input, select {
   .nav__ul, .nav__ul.ul--open {
     display: flex;
     position: static;
-    padding: 0 0 0 1rem;
+    padding: 0 0 1rem 1rem;
     text-align: left;
     background-color: white;
   }
@@ -620,9 +627,9 @@ input, select {
   .nav__programUl {
     z-index: 2;
     left: -1rem;
-    top: 1rem;
+    top: 0.5rem;
     margin-top: 1rem;
-    padding: 0.5rem 1rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     background-color: white;
     font-size: 0.8rem;
   }
