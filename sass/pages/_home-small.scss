@@ -1,6 +1,6 @@
 //Hero Image
 .main__heroSection {
-    position: relative;
+    position: relative; // When an element is relatively positioned, any child elements inside it can be positioned absolutely with respect to this parent, rather than the entire window.
 }
 .main__heroWordDiv {
     position: absolute;
